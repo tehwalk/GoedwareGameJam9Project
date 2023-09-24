@@ -22,4 +22,11 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rb.gravityScale = gravity;
     }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.CompareTag("Win"))
+        {
+            Debug.Log("Yeeeeeeeeeeeeeeeeeeeeeeeeee");
+        }
+    }
 }
