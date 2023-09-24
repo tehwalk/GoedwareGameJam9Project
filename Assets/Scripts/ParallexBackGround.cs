@@ -15,6 +15,7 @@ public class ParallexBackGround : MonoBehaviour
 
     private void LateUpdate() {
         Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
+       // deltaMovement.y = lastCameraPosition.y;
         transform.position += deltaMovement * parallaxEffectMultiplier;
         lastCameraPosition = cameraTransform.position;
     }

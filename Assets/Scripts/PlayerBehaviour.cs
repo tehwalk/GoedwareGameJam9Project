@@ -24,7 +24,7 @@ public class PlayerBehaviour : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Win"))
+        if (other.gameObject.CompareTag(Tags.T_Win))
         {
             Debug.Log("Yeeeeeeeeeeeeeeeeeeeeeeeeee");
         }
