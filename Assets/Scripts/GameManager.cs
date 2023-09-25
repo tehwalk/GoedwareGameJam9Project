@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
     public static GameManager Instance { get { return _instance; } }
+    [SerializeField] GameObject lostMenu, wonMenu;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -15,7 +17,8 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-
+       lostMenu.SetActive(false);
+       wonMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     }
 
+    #region Button Functions
     public void Pause()
     {
         Time.timeScale = 0;
@@ -33,4 +37,21 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    #endregion
+    
+    public void Lost()
+    {
+       lostMenu.SetActive(true);
+    }
+
+    public void Won()
+    {
+        wonMenu.SetActive(true);
+    }
+    
 }
