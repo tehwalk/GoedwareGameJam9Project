@@ -20,13 +20,4 @@ public class PlayerCollisions : MonoBehaviour
         }
     }
 
-    /* private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == Tags.T_Bounce)
-        {
-            Debug.Log("Bounce");
-            Vector2 direction = other.gameObject.transform.position - transform.position;
-            rb.AddForce(direction * bounceForce, ForceMode2D.Impulse);
-        }
-    } */
 }
