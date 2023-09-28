@@ -17,8 +17,8 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-       lostMenu.SetActive(false);
-       wonMenu.SetActive(false);
+        lostMenu.SetActive(false);
+        wonMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -42,16 +42,21 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene((int)SceneIndex.MainMenu);
+    }
     #endregion
-    
+
     public void Lost()
     {
-       lostMenu.SetActive(true);
+        lostMenu.SetActive(true);
     }
 
     public void Won()
     {
         wonMenu.SetActive(true);
     }
-    
+
 }
