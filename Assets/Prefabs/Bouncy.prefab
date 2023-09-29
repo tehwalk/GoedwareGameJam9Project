@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 447680428078249614}
   - component: {fileID: -6002962279425798075}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Bouncy
   m_TagString: Bounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

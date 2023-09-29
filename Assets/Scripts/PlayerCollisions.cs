@@ -1,9 +1,22 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCollisions : MonoBehaviour
 {
+    [SerializeField] float pushOverForce = 10;
+    [SerializeField] float timerMax = 1f;
+    Rigidbody2D rb;
+    Vector2 startPos;
+
+    float timer = 0f;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        startPos = transform.position;
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         switch (other.gameObject.tag)
@@ -20,13 +33,32 @@ public class PlayerCollisions : MonoBehaviour
         }
     }
 
-    /* private void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.tag == Tags.T_Bounce)
+        if (other.gameObject.CompareTag(Tags.T_Borders)) timer = timerMax;
+    }
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag(Tags.T_Borders))
         {
-            Debug.Log("Bounce");
-            Vector2 direction = other.gameObject.transform.position - transform.position;
-            rb.AddForce(direction * bounceForce, ForceMode2D.Impulse);
+           // 
+            //CountDownReset();
+           // PushAway(other);
         }
-    } */
+    }
+
+    void CountDownReset()
+    {
+        timer -= Time.deltaTime;
+        if (timer <= 0)
+            transform.position = startPos;
+    }
+
+    void PushAway(Collision2D other)
+    {
+        Debug.Log("PUSH");
+        Vector2 move = rb.position - other.GetContact(0).point;
+        rb.AddForce(move * pushOverForce, ForceMode2D.Impulse);
+    }
+
 }
