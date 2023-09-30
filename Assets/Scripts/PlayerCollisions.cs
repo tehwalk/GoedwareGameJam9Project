@@ -5,17 +5,13 @@ using UnityEngine;
 
 public class PlayerCollisions : MonoBehaviour
 {
-    [SerializeField] float pushOverForce = 10;
-    [SerializeField] float timerMax = 1f;
     Rigidbody2D rb;
-    Vector2 startPos;
-
-    float timer = 0f;
-
+    PlayerBehaviour pb;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        startPos = transform.position;
+        pb = GetComponent<PlayerBehaviour>();
+
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -32,33 +28,20 @@ public class PlayerCollisions : MonoBehaviour
                 break;
         }
     }
-
-    private void OnCollisionExit2D(Collision2D other)
+   /*  private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag(Tags.T_Borders)) timer = timerMax;
-    }
-    private void OnCollisionStay2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag(Tags.T_Borders))
+        switch (other.gameObject.tag)
         {
-           // 
-            //CountDownReset();
-           // PushAway(other);
+            case Tags.T_BigHole:
+                GoToOrbit(other.GetComponent<CircleCollider2D>().radius);
+                break;
         }
     }
 
-    void CountDownReset()
-    {
-        timer -= Time.deltaTime;
-        if (timer <= 0)
-            transform.position = startPos;
-    }
 
-    void PushAway(Collision2D other)
+    void GoToOrbit(float radius)
     {
-        Debug.Log("PUSH");
-        Vector2 move = rb.position - other.GetContact(0).point;
-        rb.AddForce(move * pushOverForce, ForceMode2D.Impulse);
-    }
-
+       
+    } */
 }
+

@@ -11,4 +11,5 @@ public const string T_Win = @"Win";
 public const string T_Lose = @"Lose";
 public const string T_Bounce = @"Bounce";
 public const string T_Borders = @"Borders";
+public const string T_BigHole = @"BigHole";
 }
