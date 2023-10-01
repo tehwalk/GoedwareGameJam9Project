@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Level1
+  m_Name: GameLevel
   m_EditorClassIdentifier: 
   templateScene: {fileID: 102900000, guid: 8c9cfa26abfee488c85f1582747f6a02, type: 3}
-  templateName: 
+  templateName: Game Level Template
   description: 
   preview: {fileID: 2800000, guid: b5b588aabfe043a49a1dde262108fd51, type: 3}
   dependencies:
@@ -131,6 +131,8 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: d1337348eb1158d4fa59fa9be8b4f15b, type: 3}
     instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: 29e2dc2235b6f9847b2900c8dfeab8e4, type: 3}
+    instantiationMode: 0
   - dependency: {fileID: 5521041526550665575, guid: 22d34eab281a42643a6697ad83a0fdc3, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: 14ec36fcfbd1a234daeb303203511eab, type: 3}
