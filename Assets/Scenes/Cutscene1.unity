@@ -400,9 +400,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speechText: {fileID: 1594104284}
   speechParts:
-  - Sir, gravity is behaving wierdly. We identified the source of the problem in
+  - -Sir, gravity is behaving wierdly. We identified the source of the problem in
     those coordinates.
-  - Then, take this meteorite, guide it and eliminate the source.
+  - -Then, take this meteorite, guide it and eliminate the source.
   typeTime: 0.05
   nextScene: 2
 --- !u!4 &1339340125
@@ -460,8 +460,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d924de1cf56ae724092c61ce4abaf67b, type: 2}
-  m_sharedMaterial: {fileID: 7003834962548789564, guid: d924de1cf56ae724092c61ce4abaf67b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 563b6fa6f2c9363409eae01a53960b21, type: 2}
+  m_sharedMaterial: {fileID: 8114307809007245038, guid: 563b6fa6f2c9363409eae01a53960b21, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

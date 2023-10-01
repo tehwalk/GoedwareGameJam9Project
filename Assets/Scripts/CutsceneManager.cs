@@ -35,6 +35,11 @@ public class CutsceneManager : MonoBehaviour
             yield return new WaitForSeconds(typeTime * 2.5f);
             speechText.text += "\n";
         }
+        GoToNextScene();
+    }
+
+    public void GoToNextScene()
+    {
         SceneManager.LoadScene((int)nextScene);
     }
 }

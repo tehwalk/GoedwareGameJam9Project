@@ -13461,6 +13461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7261075844113896338}
   - component: {fileID: 7261075844113896337}
+  - component: {fileID: 1646227498298547029}
   m_Layer: 5
   m_Name: GravitySlider
   m_TagString: Untagged
@@ -13538,7 +13539,7 @@ MonoBehaviour:
   m_MinValue: -1
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.64
+  m_Value: 0.43
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -13554,6 +13555,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1646227498298547029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7261075844113896339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb9509539fd66e44bb7bb8d9545ef41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plusButton: 275
+  minusButton: 276
+  step: 0.05
 --- !u!1 &7261075844193426704
 GameObject:
   m_ObjectHideFlags: 0
@@ -14025,6 +14041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7261075844382708592}
   - component: {fileID: 7261075844382708591}
+  - component: {fileID: 6818902702407508377}
   m_Layer: 5
   m_Name: SpeedSlider
   m_TagString: Untagged
@@ -14118,6 +14135,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6818902702407508377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7261075844382708593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb9509539fd66e44bb7bb8d9545ef41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plusButton: 100
+  minusButton: 97
+  step: 1
 --- !u!1 &7261075844422096886
 GameObject:
   m_ObjectHideFlags: 0
