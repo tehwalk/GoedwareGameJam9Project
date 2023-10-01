@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { return _instance; } }
     AudioManager audioManager;
     [SerializeField] GameObject lostMenu, wonMenu;
+    [SerializeField] SceneIndex nextScene;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -42,6 +43,11 @@ public class GameManager : MonoBehaviour
     public void GoToMainMenu()
     {
         SceneManager.LoadScene((int)SceneIndex.MainMenu);
+    }
+
+    public void GoToNextLevel()
+    {
+        SceneManager.LoadScene((int)nextScene);
     }
     #endregion
 
