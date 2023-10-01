@@ -1,15 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System;
 
+[System.Serializable]
+public class CutsceneSlide
+{
+    [TextArea(3,10)] public string[] cutsceneLines;
+    public Sprite cutsceneImage;
+}
 public class CutsceneManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI speechText;
-    [TextArea(3, 10)]
-    [SerializeField] private string[] speechParts;
+    [SerializeField] private Image cutsceneImage;
+    [SerializeField] List<CutsceneSlide> cutsceneSlides;
     [SerializeField] private float typeTime;
+    [SerializeField] private float slideTime;
     [SerializeField] private SceneIndex nextScene;
     // Start is called before the first frame update
     void Start()
@@ -17,23 +26,31 @@ public class CutsceneManager : MonoBehaviour
         StartCoroutine(TypeText());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     IEnumerator TypeText()
     {
-        for (int i = 0; i < speechParts.Length; i++)
+        foreach (CutsceneSlide slide in cutsceneSlides)
         {
-            foreach (char c in speechParts[i].ToCharArray())
+            if (slide.cutsceneImage != null)
             {
-                speechText.text += c;
-                yield return new WaitForSeconds(typeTime);
+                cutsceneImage.sprite = slide.cutsceneImage;
+                cutsceneImage.color = Color.white;
             }
-            yield return new WaitForSeconds(typeTime * 2.5f);
-            speechText.text += "\n";
+            else
+            {
+                cutsceneImage.sprite = null;
+                cutsceneImage.color = Color.clear;
+            }
+            for (int i = 0; i < slide.cutsceneLines.Length; i++)
+            {
+                foreach (char c in slide.cutsceneLines[i].ToCharArray())
+                {
+                    speechText.text += c;
+                    yield return new WaitForSeconds(typeTime);
+                }
+                yield return new WaitForSeconds(slideTime);
+                speechText.text += "\n";
+            }
+            speechText.text = String.Empty;
         }
         GoToNextScene();
     }

@@ -12474,7 +12474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0011834, y: -1.8760204, z: -10}
+  m_LocalPosition: {x: -1.0189457, y: -1.87607, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13369,6 +13369,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c8680bff1ce43c4884eb88b8066b102, type: 3}
+--- !u!1001 &966233775
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5394878415369486257, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394878415369486257, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394878415369486257, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394878415369486257, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394878415369486257, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394878415369486257, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394878415369486257, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394878415369486257, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394878415369486257, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394878415369486257, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394878415369486257, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394878415369486259, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
+      propertyPath: m_Name
+      value: Audio Source
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 97deb8f6edd70b74a9bbff79bffa31d6, type: 3}
 --- !u!4 &988184412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 447680428078249613, guid: 5c8680bff1ce43c4884eb88b8066b102, type: 3}
@@ -38994,14 +39051,46 @@ PrefabInstance:
       propertyPath: volume
       value: 
       objectReference: {fileID: 357700426}
+    - target: {fileID: 7261075842388578777, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261075842388578777, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261075842388578777, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7261075842653221569, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1469639655}
+    - target: {fileID: 7261075843071695280, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261075843071695280, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261075843071695280, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7261075843377380428, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1469639655}
+    - target: {fileID: 7261075843502664538, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261075843502664538, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7261075843533479647, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -39026,6 +39115,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1469639655}
+    - target: {fileID: 7261075844211164698, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261075844211164698, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7261075844382708591, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

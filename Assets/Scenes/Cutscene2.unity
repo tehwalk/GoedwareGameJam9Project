@@ -531,17 +531,23 @@ MonoBehaviour:
   cutsceneImage: {fileID: 2105704876}
   cutsceneSlides:
   - cutsceneLines:
-    - -Sir, gravity is behaving wierdly. We identified the source of the problem
-      in those coordinates
-    - -I see... Then, take this meteorite, guide it and eliminate the source.
+    - -Sir, This method was too slow!
+    - 'I can''t believe I''m saying this, but we should use the...
+
+'
+    - 'You can''t mean the...
+
+'
+    - 'Yes!
+
+'
     cutsceneImage: {fileID: 0}
   - cutsceneLines:
-    - Place it within this barrier tunnel and control its trajectory, using both
-      the gravity bar and the time bar.
-    cutsceneImage: {fileID: 21300000, guid: 3013f95e4f66b9a41a7c0ccda615c88d, type: 3}
+    - The Massive Flippers!!
+    cutsceneImage: {fileID: 21300000, guid: 55fe1165d913e6842a2b7652e6c3a655, type: 3}
   typeTime: 0.05
   slideTime: 0.15
-  nextScene: 2
+  nextScene: 4
 --- !u!4 &1339340125
 Transform:
   m_ObjectHideFlags: 0
