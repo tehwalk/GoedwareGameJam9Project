@@ -531,17 +531,14 @@ MonoBehaviour:
   cutsceneImage: {fileID: 2105704876}
   cutsceneSlides:
   - cutsceneLines:
-    - -Sir, gravity is behaving wierdly. We identified the source of the problem
-      in those coordinates
-    - -I see... Then, take this meteorite, guide it and eliminate the source.
+    - -Sir, the anomaly has started throwing miniature black holes in our direction.
     cutsceneImage: {fileID: 0}
   - cutsceneLines:
-    - Place it within this barrier tunnel and control its trajectory, using both
-      the gravity bar and the time bar.
-    cutsceneImage: {fileID: 21300000, guid: 3013f95e4f66b9a41a7c0ccda615c88d, type: 3}
+    - We should better avoid them then!
+    cutsceneImage: {fileID: 21300000, guid: c033e88bdfa9e0344aaaaa0d1dddeae0, type: 3}
   typeTime: 0.05
   slideTime: 0.15
-  nextScene: 2
+  nextScene: 6
 --- !u!4 &1339340125
 Transform:
   m_ObjectHideFlags: 0

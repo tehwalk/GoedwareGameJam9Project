@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
     public static GameManager Instance { get { return _instance; } }
+    AudioManager audioManager;
     [SerializeField] GameObject lostMenu, wonMenu;
     // Start is called before the first frame update
     private void Awake()
@@ -17,14 +18,9 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        audioManager = AudioManager.Instance;
         lostMenu.SetActive(false);
         wonMenu.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     #region Button Functions
@@ -52,11 +48,13 @@ public class GameManager : MonoBehaviour
     public void Lost()
     {
         lostMenu.SetActive(true);
+        audioManager.PlayLoseAudio();
     }
 
     public void Won()
     {
         wonMenu.SetActive(true);
+        audioManager.PlayWinAudio();
     }
 
 }
