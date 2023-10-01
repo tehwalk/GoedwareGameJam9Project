@@ -143,4 +143,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelClip: {fileID: 8300000, guid: ee61a5f22cfe16a4c9d85835a962d830, type: 3}
   loseClip: {fileID: 8300000, guid: aa41fc1e22c45784a83fb97424891a19, type: 3}
-  winClip: {fileID: 8300000, guid: 73eaa0d53106138488ee0c43ba06f1a6, type: 3}
+  winClip: {fileID: 8300000, guid: 5268e9022ba513a488a5f253edb9cb77, type: 3}
