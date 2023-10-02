@@ -16,6 +16,7 @@ public class Bouncer : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject == playerBehaviour.gameObject)
         {
+            AudioManager.Instance.PlayFlipperSFX();
             animator.SetTrigger("Bounce");
         }
     }

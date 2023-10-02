@@ -42,11 +42,13 @@ public class GameManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene((int)SceneIndex.MainMenu);
     }
 
     public void GoToNextLevel()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene((int)nextScene);
     }
     #endregion

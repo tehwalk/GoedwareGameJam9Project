@@ -23,6 +23,7 @@ public class PlayerCollisions : MonoBehaviour
                 break;
             case Tags.T_Lose:
                 Destroy(gameObject);
+                AudioManager.Instance.PlayEruptionSFX();
                 Debug.Log("You lost");
                 GameManager.Instance.Lost();
                 break;
