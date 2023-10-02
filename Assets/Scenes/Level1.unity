@@ -20785,7 +20785,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0189457, y: -1.87607, z: -10}
+  m_LocalPosition: {x: -1.0243492, y: -1.8760796, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21198,7 +21198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
+  m_sendNavigationEvents: 0
   m_DragThreshold: 10
 --- !u!4 &1270800996
 Transform:
@@ -52863,6 +52863,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1469639655}
+    - target: {fileID: 7261075844081884497, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 124.65564
+      objectReference: {fileID: 0}
     - target: {fileID: 7261075844113896337, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

@@ -15,16 +15,17 @@ public class SliderControls : MonoBehaviour
     {
         slider = GetComponent<Slider>();
         player = GameObject.FindObjectOfType<PlayerBehaviour>();
+        slider.onValueChanged.Invoke(slider.value);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(plusButton))
+        if (Input.GetKey(plusButton))
         {
             slider.value += step;
         }
-        else if (Input.GetKeyDown(minusButton))
+        else if (Input.GetKey(minusButton))
         {
             slider.value -= step;
         }
