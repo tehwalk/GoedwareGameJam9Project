@@ -144,3 +144,8 @@ MonoBehaviour:
   levelClip: {fileID: 8300000, guid: ee61a5f22cfe16a4c9d85835a962d830, type: 3}
   loseClip: {fileID: 8300000, guid: aa41fc1e22c45784a83fb97424891a19, type: 3}
   winClip: {fileID: 8300000, guid: 5268e9022ba513a488a5f253edb9cb77, type: 3}
+  flipperSFX:
+  - {fileID: 2545635257774965242, guid: 4e241f0d74c89714e968794da5e2e600, type: 3}
+  - {fileID: 1456951559026656192, guid: 512d2186fba235c4db07e257a43c02f2, type: 3}
+  - {fileID: 4417025635535484548, guid: 724497a03fe50464ca66ceda58979857, type: 3}
+  eruptionSFX: {fileID: 6738709552680769993, guid: 3e8b02ff0fb135746a3110f7b7680186, type: 3}

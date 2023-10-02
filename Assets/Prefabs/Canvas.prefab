@@ -13706,7 +13706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plusButton: 275
   minusButton: 276
-  step: 0.05
+  step: 0.005
 --- !u!1 &7261075844193426704
 GameObject:
   m_ObjectHideFlags: 0
@@ -14287,7 +14287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plusButton: 100
   minusButton: 97
-  step: 1
+  step: 0.1
 --- !u!1 &7261075844422096886
 GameObject:
   m_ObjectHideFlags: 0
