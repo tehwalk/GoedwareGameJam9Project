@@ -116159,6 +116159,10 @@ PrefabInstance:
       propertyPath: lostMenu
       value: 
       objectReference: {fileID: 1227101328}
+    - target: {fileID: 4201614380427977012, guid: bc0e817efc4cb134e9ec5023181ba943, type: 3}
+      propertyPath: nextScene
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4201614380427977013, guid: bc0e817efc4cb134e9ec5023181ba943, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -116451,6 +116455,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 45112321199570538, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1469639655}
+    - target: {fileID: 45112321199570538, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToNextLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 5469685204524521531, guid: 9583f5e4e81054546b6b930e59333c5b, type: 3}
       propertyPath: volume
       value: 

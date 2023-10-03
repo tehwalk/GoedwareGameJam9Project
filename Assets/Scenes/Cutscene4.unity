@@ -386,7 +386,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1285064609
 AudioSource:
   m_ObjectHideFlags: 0
@@ -541,7 +541,7 @@ MonoBehaviour:
     cutsceneImage: {fileID: 21300000, guid: b0f56810cfa2b484c8953a349408f0b1, type: 3}
   typeTime: 0.05
   slideTime: 0.15
-  nextScene: 0
+  nextScene: 8
 --- !u!4 &1339340125
 Transform:
   m_ObjectHideFlags: 0
